@@ -1,0 +1,57 @@
+// SECTION :: START
+
+section#subscribe.subscribe
+  .c-grid
+    .section__wrapper
+
+      .c-section(data-align="center" data-size='xbig')
+        .c-section__head
+
+          .logo.logo--header
+            a.logo__link(href="/")
+              img.logo__image(src="./img/logo-2.png" srcset='./img/logo-2@2x.png 2x' alt="Logotype")
+
+        .c-section__body
+
+          h5.c-section__title Subscribe to Your Outbound Calling Solution
+
+          .subscribe__box-wrapper
+            .subscribe__box
+              p.subscribe__box-title IQ Accelerate
+              p.subscribe__box-desc Supercharge your outbound calling team with software that improves your reach and conversion rate
+              p.subscribe__box-subtitle $5 / Prospect Reached
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Accelerate
+            .subscribe__box
+              p.subscribe__box-title IQ Boost
+              p.subscribe__box-desc Outsource your outbound calling efforts to ProspectIQ
+              p.subscribe__box-subtitle $200 / Booked Appointment
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Boost
+            .subscribe__box
+              p.subscribe__box-title IQ Scale
+              p.subscribe__box-desc Employ AI agents to supplement or replace your outbound calling team
+              p.subscribe__box-subtitle!= "$100 / Booked Appointmen <br><span>(company account)</span>"
+              p.subscribe__box-subtitle!= "$25 / Booked Appointmen <br><span>(individual contributor account – maximum of 10 appointments per month)</span>"
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Scale
+
+          p.c-section__info
+            | Terms and Conditions
+            br
+            br
+            | By confirming your subscription, you allow ProspectIQ.ai to charge your card for future payments.
+            br
+            | Payments will only be charged when a prospect is reached (Accelerate) or when a prospect is booked for an appointment (Boost and Scale).
+            br
+            | You can always cancel your subscription at any time.
+            br
+            | For IQ Accelerate, you must use the included dialer as it will ensure local presence and it is how we audit your results.
+            br
+            | All calls are recorded and will be made available to you in real time via the ProspectIQ management dashboard.
+
+        .c-section__footer
+
+          p.c-section__info!= "Having trouble? Contact us at <a href='#'>support@prospectiq.ai</a>"
+
+// SECTION :: END

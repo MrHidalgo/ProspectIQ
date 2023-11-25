@@ -1,0 +1,41 @@
+// SECTION :: START
+
+section#sign.sign
+  .c-grid
+    .section__wrapper
+
+      .c-section(data-align="center")
+        .c-section__head
+
+          .logo.logo--header
+            a.logo__link(href="/")
+              img.logo__image(src="./img/logo-2.png" srcset='./img/logo-2@2x.png 2x' alt="Logotype")
+
+        .c-section__body
+
+          h5.c-section__title Log in to your account
+
+          .sign__with.c-btn__wrapper.c-btn__wrapper--column
+            a.c-btn.c-btn--with(href="#" data-btn-round='half')
+              img(src="./img/icon-google.png" srcset='./img/icon-google@2x.png 2x' alt="")
+              span Log in with Google
+            a.c-btn.c-btn--with(href="#" data-btn-round='half')
+              img(src="./img/icon-sso.png" srcset='./img/icon-sso@2x.png 2x' alt="")
+              span Log in with SSO
+          .sign__or
+            span or
+
+          form.c-form(action="" method='' autocomplete='off')
+            .c-form__field
+              label.c-form__label(for="email") Email
+              input.c-form__input(type="email" name="email" id="email" placeholder="Type your email address..." required)
+            .c-form__field
+              label.c-form__label(for="password") Password
+              input.c-form__input(type="password" name="password" id="password" placeholder="Type your password..." required)
+            .c-form__field.c-form__field--link
+              a(href="#") Forgot password?
+            .c-form__field.c-form__field--btn
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Log in
+
+// SECTION :: END

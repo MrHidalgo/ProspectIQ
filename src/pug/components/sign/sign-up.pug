@@ -1,0 +1,51 @@
+// SECTION :: START
+
+section#sign.sign
+  .c-grid
+    .section__wrapper
+
+      .c-section(data-align="center")
+        .c-section__head
+
+          .logo.logo--header
+            a.logo__link(href="/")
+              img.logo__image(src="./img/logo-2.png" srcset='./img/logo-2@2x.png 2x' alt="Logotype")
+
+        .c-section__body
+
+          h5.c-section__title Sign up
+          p.c-section__desc Fill in your details below and continue signing up
+
+          form.c-form(action="" method='' autocomplete='off')
+            .c-form__group
+              div
+                .c-form__field
+                  label.c-form__label(for="first_name") First name*
+                  input.c-form__input(type="text" name="first_name" id="first_name" placeholder="Type your first name..." required)
+              div
+                .c-form__field
+                  label.c-form__label(for="last_name") Last name*
+                  input.c-form__input(type="text" name="last_name" id="last_name" placeholder="Type your last name..." required)
+            .c-form__field
+              label.c-form__label(for="email") Email
+              input.c-form__input(type="email" name="email" id="email" placeholder="Type your email address..." required)
+            .c-form__group
+              div
+                .c-form__field
+                  label.c-form__label(for="password") Password
+                  input.c-form__input(type="password" name="password" id="password" placeholder="Type your password..." required)
+              div
+                .c-form__field
+                  label.c-form__label(for="confirm_password") Confirm password*
+                  input.c-form__input(type="password" name="confirm_password" id="confirm_password" placeholder="Retype your password..." required)
+            .c-form__field.c-form__field--btn
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Create account
+            .c-form__field.c-form__field--info
+              p.c-form__info By clicking “Create account” you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+
+        .c-section__footer
+
+          p.c-section__info!= "Having trouble? Contact us at <a href='#'>support@prospectiq.ai</a>"
+
+// SECTION :: END

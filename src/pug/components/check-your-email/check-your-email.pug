@@ -1,0 +1,32 @@
+// SECTION :: START
+
+section#check-your-email.check-your-email
+  .c-grid
+    .section__wrapper
+
+      .c-section(data-align="center")
+        .c-section__head
+
+          .logo.logo--header
+            a.logo__link(href="/")
+              img.logo__image(src="./img/logo-2.png" srcset='./img/logo-2@2x.png 2x' alt="Logotype")
+
+        .c-section__body
+
+          h5.c-section__title Check your email
+          p.c-section__desc!= "Please, enter the verification code we sent to <br><strong>your email</strong>"
+
+          form.c-form(action="" method='' autocomplete='off')
+            .c-form__field
+              label.c-form__label(for="confirmation_code") Confirmation code
+              input.c-form__input(type="text" name="confirmation_code" id="confirmation_code" placeholder="Type your confirmation code..." required)
+            .c-form__field.c-form__field--btn
+              .c-btn__wrapper.c-btn__wrapper--between
+                a.c-btn(href="#" data-btn-color='gray' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Resend code
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Verify
+
+        .c-section__footer
+
+          p.c-section__info!= "Having trouble? Contact us at <a href='#'>support@prospectiq.ai</a>"
+
+// SECTION :: END

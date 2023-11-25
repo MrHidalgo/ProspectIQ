@@ -1,0 +1,93 @@
+// HEADER :: START
+
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(4, 4, 30, 0.32);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    align-items: center;
+    gap: 30px;
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include adaptive(1279) {
+      grid-template-columns: 225px 1fr 225px;
+    }
+    @include adaptive(1023) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > div {
+      &:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        @include adaptive(1023) {
+          z-index: 999;
+          overflow: hidden;
+          overflow-y: auto;
+          position: fixed;
+          top: 90px;
+          left: 0;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: calc(100% - 90px);
+          padding: 50px;
+          background-color: rgba(4, 4, 30, 1);
+
+          &.is-open {
+            display: flex;
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include adaptive(1023) {
+          gap: 15px;
+        }
+
+        .hamburger {
+          display: none;
+          @include adaptive(1023) {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    @include adaptive(1279) {
+      column-gap: 20px;
+    }
+    @include adaptive(1023) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    a {
+      display: flex;
+      color: #F8F8F8;
+      font-size: 16px;
+      font-weight: 400;
+      @include adaptive(1023) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// HEADER :: END

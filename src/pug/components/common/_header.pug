@@ -1,0 +1,27 @@
+// HEADER :: START
+
+nav#header.header
+  .header__wrapper
+    div
+
+      .logo.logo--header
+        a.logo__link(href="/")
+          img.logo__image(src="./img/logo.png" srcset='./img/logo@2x.png 2x' alt="Logotype")
+
+    div(mobile-block-js)
+
+      nav.header__nav
+        a(href="#") IQ Accelerate
+        a(href="#") IQ Boost
+        a(href="#") IQ Scale
+        a(href="#") Pricing
+        a(href="#") About
+
+    div
+
+      .header__btn.c-btn__wrapper
+        a.c-btn(href="#") Book a Demo
+
+      +hamburger()
+
+// HEADER :: END
