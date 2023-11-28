@@ -31,18 +31,20 @@
   <body>
     <!-- HEADER :: START-->
     <nav class="header" id="header">
-      <div class="header__wrapper">
-        <div>
-          <div class="logo logo--header"><a class="logo__link" href="/"><img class="logo__image" src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="Logotype"></a></div>
-        </div>
-        <div mobile-block-js>
-          <nav class="header__nav"><a href="#">IQ Accelerate</a><a href="#">IQ Boost</a><a href="#">IQ Scale</a><a href="#">Pricing</a><a href="#">About</a></nav>
-        </div>
-        <div>
-          <div class="header__btn c-btn__wrapper"><a class="c-btn" href="#">Book a Demo</a></div>
-          <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+      <div class="c-grid-fluid">
+        <div class="header__wrapper">
+          <div>
+            <div class="logo logo--header"><a class="logo__link" href="/"><img class="logo__image" src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="Logotype"></a></div>
+          </div>
+          <div mobile-block-js>
+            <nav class="header__nav"><a href="#">IQ Accelerate</a><a href="#">IQ Boost</a><a href="#">IQ Scale</a><a href="#">Pricing</a><a href="#">About</a></nav>
+          </div>
+          <div>
+            <div class="header__btn c-btn__wrapper"><a class="c-btn" href="#">Book a Demo</a></div>
+            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -76,8 +78,24 @@
                   <div class="subscribe__box">
                     <p class="subscribe__box-title">IQ Scale</p>
                     <p class="subscribe__box-desc">Employ AI agents to supplement or replace your outbound calling team</p>
-                    <p class="subscribe__box-subtitle">$100 / Booked Appointmen <br><span>(company account)</span></p>
-                    <p class="subscribe__box-subtitle">$25 / Booked Appointmen <br><span>(individual contributor account – maximum of 10 appointments per month)</span></p>
+                    <div class="subscribe__box-subtitle-wrapper">
+                      <div>
+                        <label>
+                          <input type="radio" name="radio" checked>
+                        </label>
+                        <div>
+                          <p class="subscribe__box-subtitle">$100 / Booked Appointmen <br><span>(company account)</span></p>
+                        </div>
+                      </div>
+                      <div>
+                        <label>
+                          <input type="radio" name="radio" checked>
+                        </label>
+                        <div>
+                          <p class="subscribe__box-subtitle">$25 / Booked Appointmen <br><span>(individual contributor account – maximum of 10 appointments per month)</span></p>
+                        </div>
+                      </div>
+                    </div>
                     <div class="c-btn__wrapper"><a class="c-btn" href="#" data-btn-color="blue" data-btn-size="full" data-btn-fw="600" data-btn-round="half">Choose IQ Scale</a></div>
                   </div>
                 </div>

@@ -49,6 +49,23 @@
       font-size: 16px;
       font-weight: 700;
 
+      &-wrapper {
+        > div {
+          display: flex;
+
+          label {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 4px;
+            padding-right: 10px;
+          }
+
+          > div {
+            flex: 1;
+          }
+        }
+      }
+
       & + .subscribe__box-subtitle {
         padding-top: 15px;
         border-top: 1px solid #EBEBEB;

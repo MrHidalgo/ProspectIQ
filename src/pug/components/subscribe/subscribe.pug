@@ -31,8 +31,17 @@ section#subscribe.subscribe
             .subscribe__box
               p.subscribe__box-title IQ Scale
               p.subscribe__box-desc Employ AI agents to supplement or replace your outbound calling team
-              p.subscribe__box-subtitle!= "$100 / Booked Appointmen <br><span>(company account)</span>"
-              p.subscribe__box-subtitle!= "$25 / Booked Appointmen <br><span>(individual contributor account – maximum of 10 appointments per month)</span>"
+              .subscribe__box-subtitle-wrapper
+                div
+                  label
+                    input(type="radio" name="radio" checked)
+                  div
+                    p.subscribe__box-subtitle!= "$100 / Booked Appointmen <br><span>(company account)</span>"
+                div
+                  label
+                    input(type="radio" name="radio" checked)
+                  div
+                    p.subscribe__box-subtitle!= "$25 / Booked Appointmen <br><span>(individual contributor account – maximum of 10 appointments per month)</span>"
               .c-btn__wrapper
                 a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Scale
 

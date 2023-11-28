@@ -14,8 +14,6 @@
     align-items: center;
     gap: 30px;
     height: 90px;
-    padding-left: 10px;
-    padding-right: 10px;
     @include adaptive(1279) {
       grid-template-columns: 225px 1fr 225px;
     }

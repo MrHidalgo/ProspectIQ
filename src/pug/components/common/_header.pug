@@ -1,27 +1,28 @@
 // HEADER :: START
 
 nav#header.header
-  .header__wrapper
-    div
+  .c-grid-fluid
+    .header__wrapper
+      div
 
-      .logo.logo--header
-        a.logo__link(href="/")
-          img.logo__image(src="./img/logo.png" srcset='./img/logo@2x.png 2x' alt="Logotype")
+        .logo.logo--header
+          a.logo__link(href="/")
+            img.logo__image(src="./img/logo.png" srcset='./img/logo@2x.png 2x' alt="Logotype")
 
-    div(mobile-block-js)
+      div(mobile-block-js)
 
-      nav.header__nav
-        a(href="#") IQ Accelerate
-        a(href="#") IQ Boost
-        a(href="#") IQ Scale
-        a(href="#") Pricing
-        a(href="#") About
+        nav.header__nav
+          a(href="#") IQ Accelerate
+          a(href="#") IQ Boost
+          a(href="#") IQ Scale
+          a(href="#") Pricing
+          a(href="#") About
 
-    div
+      div
 
-      .header__btn.c-btn__wrapper
-        a.c-btn(href="#") Book a Demo
+        .header__btn.c-btn__wrapper
+          a.c-btn(href="#") Book a Demo
 
-      +hamburger()
+        +hamburger()
 
 // HEADER :: END

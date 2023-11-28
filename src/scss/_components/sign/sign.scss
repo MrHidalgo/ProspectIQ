@@ -47,6 +47,18 @@
       padding-right: 10px;
     }
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+
+    a {
+      margin-left: 3px;
+      color: #3A00FF;
+    }
+  }
 }
 
 // SECTION :: END
