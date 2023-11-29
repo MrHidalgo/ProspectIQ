@@ -5,6 +5,9 @@ section#statistics.statistics
     .statistics__wrapper
       .statistics__wrapper-header
 
+        .statistics__total
+          p!= "Total to be charged: <strong>$35,000.00</strong>"
+
         .statistics__date
           label
             input(type='date' name='' placeholder='Date')
@@ -23,12 +26,12 @@ section#statistics.statistics
                 th Dials
                 th Reaches
                 th Booked
-                th Leads Processed
+                th.center Leads Processed
                 th Reaches
                 th Booked
-                th Leads Processing
+                th.center Leads Processing
                 th Total Feels
-                th Discounts
+                th.center Discounts
                 th Total to be Charged
             tbody
               each val, idx in [1,2,3,4,5,6,7,7,8,9]
@@ -42,12 +45,15 @@ section#statistics.statistics
                   td 1079
                   td 310
                   td 10
-                  td -
+                  td
+                    span -
                   td $15.00
                   td $150.00
-                  td -
+                  td
+                    span -
                   td $6,150.00
-                  td -
+                  td
+                    span -
                   td $6,150.00
 
       .statistics__wrapper-footer

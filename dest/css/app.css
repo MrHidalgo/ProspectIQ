@@ -513,8 +513,7 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 .c-pagination__btn {
-  border-color: #3A00FF;
-  background-color: #3A00FF;
+  border-color: #fff;
 }
 .c-pagination__btn svg {
   display: block;
@@ -1003,13 +1002,13 @@ picture {
 }
 
 .statistics {
-  padding-top: 152px;
-  padding-bottom: 152px;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
 @media screen and (max-width: 767px) {
   .statistics {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .statistics__wrapper-header {
@@ -1020,9 +1019,21 @@ picture {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-bottom: 76px;
+  gap: 30px;
 }
 @media screen and (max-width: 767px) {
   .statistics__wrapper-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
     padding-bottom: 50px;
   }
 }
@@ -1033,6 +1044,21 @@ picture {
   .statistics__wrapper-footer {
     padding-top: 50px;
   }
+}
+.statistics__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.statistics__total p {
+  color: #ffffff;
+  font-size: 18px;
+}
+.statistics__total p strong {
+  font-weight: 700;
 }
 .statistics__date {
   display: -webkit-box;
@@ -1114,6 +1140,9 @@ picture {
   font-weight: 600;
   font-size: 15px;
 }
+.statistics__table table tr th.center {
+  text-align: center;
+}
 .statistics__table table tr td {
   font-size: 14px;
   border-bottom: 1px solid #dee2e6;
@@ -1123,4 +1152,8 @@ picture {
 }
 .statistics__table table tr td a {
   color: #3A00FF;
+}
+.statistics__table table tr td span {
+  display: block;
+  text-align: center;
 }
