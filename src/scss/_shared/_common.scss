@@ -106,6 +106,9 @@
   &[data-size='xbig'] {
     max-width: 1000px;
   }
+  &[data-size='exbig'] {
+    max-width: 1280px;
+  }
 
   &__head {
     padding-bottom: 25px;

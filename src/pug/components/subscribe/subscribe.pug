@@ -4,7 +4,7 @@ section#subscribe.subscribe
   .c-grid
     .section__wrapper
 
-      .c-section(data-align="center" data-size='xbig')
+      .c-section(data-align="center" data-size='exbig')
         .c-section__head
 
           .logo.logo--header
@@ -22,6 +22,22 @@ section#subscribe.subscribe
               p.subscribe__box-subtitle $5 / Prospect Reached
               .c-btn__wrapper
                 a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Accelerate
+            .subscribe__box
+              p.subscribe__box-title IQ Boost
+              p.subscribe__box-desc Activate Your Prospects
+              .subscribe__box-subtitle-wrapper
+                div
+                  label
+                    input(type="radio" name="radio1")
+                  div
+                    p.subscribe__box-subtitle!= "$25 per Activation"
+                div
+                  label
+                    input(type="radio" name="radio1" checked)
+                  div
+                    p.subscribe__box-subtitle!= "$100 per Appointment Directly Booked"
+              .c-btn__wrapper
+                a.c-btn(href='#' data-btn-color='blue' data-btn-size='full' data-btn-fw='600' data-btn-round='half') Choose IQ Boost
             .subscribe__box
               p.subscribe__box-title IQ Boost
               p.subscribe__box-desc Outsource your outbound calling efforts to ProspectIQ

@@ -15,14 +15,20 @@
     border-radius: 8px;
     border: 1px solid #EBEBEB;
     text-align: center;
+    @include adaptive(1279) {
+      min-height: 100%;
+    }
 
     &-wrapper {
       display: grid;
       align-items: flex-start;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       padding-top: 54px;
       padding-bottom: 24px;
+      @include adaptive(1279) {
+        grid-template-columns: repeat(2, 1fr);
+      }
       @include adaptive(767) {
         grid-template-columns: 1fr;
       }

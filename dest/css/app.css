@@ -403,6 +403,9 @@ picture {
 .c-section[data-size=xbig] {
   max-width: 1000px;
 }
+.c-section[data-size=exbig] {
+  max-width: 1280px;
+}
 .c-section__head {
   padding-bottom: 25px;
   margin-bottom: 25px;
@@ -848,15 +851,25 @@ picture {
   border: 1px solid #EBEBEB;
   text-align: center;
 }
+@media screen and (max-width: 1279px) {
+  .subscribe__box {
+    min-height: 100%;
+  }
+}
 .subscribe__box-wrapper {
   display: grid;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding-top: 54px;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 1279px) {
+  .subscribe__box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 767px) {
   .subscribe__box-wrapper {
